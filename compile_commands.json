@@ -1,0 +1,382 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/main.cpp",
+    "output": "/home/poulpy/projects/prompt/src/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/shells/Bash.o",
+      "src/shells/Bash.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/shells/Bash.cpp",
+    "output": "/home/poulpy/projects/prompt/src/shells/Bash.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/Battery.o",
+      "src/widgets/Battery.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/Battery.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/Battery.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/Hours.o",
+      "src/widgets/Hours.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/Hours.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/Hours.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/RootSymol.o",
+      "src/widgets/RootSymol.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/RootSymol.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/RootSymol.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/Path.o",
+      "src/widgets/Path.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/Path.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/Path.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/Minute.o",
+      "src/widgets/Minute.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/Minute.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/Minute.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/Seconds.o",
+      "src/widgets/Seconds.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/Seconds.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/Seconds.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/User.o",
+      "src/widgets/User.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/User.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/User.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/Git.o",
+      "src/widgets/Git.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/Git.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/Git.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/Bat.o",
+      "src/widgets/Bat.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/Bat.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/Bat.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/colors/Cyan.o",
+      "src/widgets/colors/Cyan.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/colors/Cyan.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/colors/Cyan.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/colors/Bold.o",
+      "src/widgets/colors/Bold.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/colors/Bold.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/colors/Bold.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/colors/Blue.o",
+      "src/widgets/colors/Blue.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/colors/Blue.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/colors/Blue.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/colors/Purple.o",
+      "src/widgets/colors/Purple.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/colors/Purple.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/colors/Purple.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/colors/Yellow.o",
+      "src/widgets/colors/Yellow.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/colors/Yellow.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/colors/Yellow.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/colors/Pink.o",
+      "src/widgets/colors/Pink.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/colors/Pink.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/colors/Pink.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/colors/Red.o",
+      "src/widgets/colors/Red.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/colors/Red.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/colors/Red.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/widgets/colors/Green.o",
+      "src/widgets/colors/Green.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/widgets/colors/Green.cpp",
+    "output": "/home/poulpy/projects/prompt/src/widgets/colors/Green.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-pc-linux-gnu-g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-march=native",
+      "-std=c++20",
+      "-I./src",
+      "-c",
+      "-o",
+      "src/commands/init.o",
+      "src/commands/init.cpp"
+    ],
+    "directory": "/home/poulpy/projects/prompt",
+    "file": "/home/poulpy/projects/prompt/src/commands/init.cpp",
+    "output": "/home/poulpy/projects/prompt/src/commands/init.o"
+  }
+]
