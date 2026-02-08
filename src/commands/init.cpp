@@ -3,13 +3,16 @@
 #include "parser.hpp"
 #include "widgets/Battery.hpp"
 #include "widgets/Git.hpp"
+#include "widgets/Hours.hpp"
 #include "widgets/IWidget.hpp"
+#include "widgets/Minute.hpp"
 #include "widgets/Path.hpp"
 #include "widgets/RootSymol.hpp"
 #include "widgets/Separator.hpp"
 #include "widgets/User.hpp"
 #include "widgets/colors/Cyan.hpp"
 #include "widgets/colors/Red.hpp"
+#include "widgets/colors/Purple.hpp"
 #include "widgets/colors/Reset.hpp"
 #include "shells/Bash.hpp"
 #include "shells/Fish.hpp"
@@ -45,7 +48,9 @@ std::vector<std::shared_ptr<IWidget>> default_config() {
         std::make_shared<Path>(),
         
         std::make_shared<Separator>(" "),
+        std::make_shared<Purple>(),
         std::make_shared<Git>(),
+        std::make_shared<Reset>(),
 
         std::make_shared<Separator>(" "),
         std::make_shared<Battery>(),
@@ -86,6 +91,7 @@ void commands::init() {
 			shell = std::make_unique<Shell::Bash>();
 			break;
 		case Shells::Zsh:
+			shell = std::make_unique<Shell::Bash>();
 			break;
 		case Shells::Fish:
 			shell = std::make_unique<Shell::Fish>();

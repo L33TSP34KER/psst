@@ -34,6 +34,14 @@
 !_TAG_KIND_DESCRIPTION!Make	I,makefile	/makefiles/
 !_TAG_KIND_DESCRIPTION!Make	m,macro	/macros/
 !_TAG_KIND_DESCRIPTION!Make	t,target	/targets/
+!_TAG_KIND_DESCRIPTION!Markdown	S,subsection	/level 2 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	T,l4subsection	/level 4 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	c,chapter	/chapters/
+!_TAG_KIND_DESCRIPTION!Markdown	h,hashtag	/hashtags/
+!_TAG_KIND_DESCRIPTION!Markdown	n,footnote	/footnotes/
+!_TAG_KIND_DESCRIPTION!Markdown	s,section	/sections/
+!_TAG_KIND_DESCRIPTION!Markdown	t,subsubsection	/level 3 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	u,l5subsection	/level 5 sections/
 !_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
@@ -41,8 +49,9 @@
 !_TAG_PARSER_VERSION!C++	1.1	/current.age/
 !_TAG_PARSER_VERSION!JSON	0.0	/current.age/
 !_TAG_PARSER_VERSION!Make	1.1	/current.age/
+!_TAG_PARSER_VERSION!Markdown	1.1	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/home/poulpy/projects/prompt/	//
+!_TAG_PROC_CWD	/home/poulpy/projects/psst/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
@@ -61,31 +70,341 @@ $(NAME)	Makefile	/^$(NAME): $(OBJ)$/;"	t
 %.o	Makefile	/^%.o: %.c$/;"	t
 0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:0.arguments
 0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:1.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:10.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:11.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:12.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:13.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:14.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:15.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:16.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:17.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:18.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:19.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:2.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:20.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:21.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:22.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:23.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:3.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:4.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:5.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:6.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:7.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:8.arguments
+0	compile_commands.json	/^      "\/usr\/bin\/x86_64-pc-linux-gnu-g++",$/;"	s	array:9.arguments
 0	compile_commands.json	/^  {$/;"	o
-1	compile_commands.json	/^      "-Wall",$/;"	s	array:0.arguments
-1	compile_commands.json	/^      "-Wall",$/;"	s	array:1.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:0.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:1.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:10.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:11.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:12.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:13.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:14.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:15.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:16.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:17.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:18.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:19.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:2.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:20.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:21.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:22.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:23.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:3.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:4.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:5.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:6.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:7.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:8.arguments
+1	compile_commands.json	/^      "-O2",$/;"	s	array:9.arguments
 1	compile_commands.json	/^  {$/;"	o
-10	compile_commands.json	/^      "src\/main.o",$/;"	s	array:0.arguments
-10	compile_commands.json	/^      "src\/widgets\/Git.o",$/;"	s	array:1.arguments
-11	compile_commands.json	/^      "src\/main.cpp"$/;"	s	array:0.arguments
-11	compile_commands.json	/^      "src\/widgets\/Git.cpp"$/;"	s	array:1.arguments
-2	compile_commands.json	/^      "-Wextra",$/;"	s	array:0.arguments
-2	compile_commands.json	/^      "-Wextra",$/;"	s	array:1.arguments
-3	compile_commands.json	/^      "-Werror",$/;"	s	array:0.arguments
-3	compile_commands.json	/^      "-Werror",$/;"	s	array:1.arguments
-4	compile_commands.json	/^      "-pedantic",$/;"	s	array:0.arguments
-4	compile_commands.json	/^      "-pedantic",$/;"	s	array:1.arguments
-5	compile_commands.json	/^      "-march=native",$/;"	s	array:0.arguments
-5	compile_commands.json	/^      "-march=native",$/;"	s	array:1.arguments
-6	compile_commands.json	/^      "-std=c++20",$/;"	s	array:0.arguments
-6	compile_commands.json	/^      "-std=c++20",$/;"	s	array:1.arguments
-7	compile_commands.json	/^      "-I.\/src",$/;"	s	array:0.arguments
-7	compile_commands.json	/^      "-I.\/src",$/;"	s	array:1.arguments
-8	compile_commands.json	/^      "-c",$/;"	s	array:0.arguments
-8	compile_commands.json	/^      "-c",$/;"	s	array:1.arguments
-9	compile_commands.json	/^      "-o",$/;"	s	array:0.arguments
-9	compile_commands.json	/^      "-o",$/;"	s	array:1.arguments
-Bash	src/shells/Bash.hpp	/^class Bash : public IShell{$/;"	c
+10	compile_commands.json	/^      "-o",$/;"	s	array:0.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:1.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:10.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:11.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:12.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:13.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:14.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:15.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:16.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:17.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:18.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:19.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:2.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:20.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:21.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:22.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:23.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:3.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:4.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:5.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:6.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:7.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:8.arguments
+10	compile_commands.json	/^      "-o",$/;"	s	array:9.arguments
+10	compile_commands.json	/^  {$/;"	o
+11	compile_commands.json	/^      "src\/commands\/init.o",$/;"	s	array:23.arguments
+11	compile_commands.json	/^      "src\/main.o",$/;"	s	array:0.arguments
+11	compile_commands.json	/^      "src\/parser.o",$/;"	s	array:4.arguments
+11	compile_commands.json	/^      "src\/shells\/Bash.o",$/;"	s	array:3.arguments
+11	compile_commands.json	/^      "src\/shells\/EShell.o",$/;"	s	array:1.arguments
+11	compile_commands.json	/^      "src\/shells\/Fish.o",$/;"	s	array:2.arguments
+11	compile_commands.json	/^      "src\/widgets\/Bat.o",$/;"	s	array:13.arguments
+11	compile_commands.json	/^      "src\/widgets\/Battery.o",$/;"	s	array:5.arguments
+11	compile_commands.json	/^      "src\/widgets\/Git.o",$/;"	s	array:12.arguments
+11	compile_commands.json	/^      "src\/widgets\/Hours.o",$/;"	s	array:6.arguments
+11	compile_commands.json	/^      "src\/widgets\/Minute.o",$/;"	s	array:9.arguments
+11	compile_commands.json	/^      "src\/widgets\/Path.o",$/;"	s	array:8.arguments
+11	compile_commands.json	/^      "src\/widgets\/RootSymol.o",$/;"	s	array:7.arguments
+11	compile_commands.json	/^      "src\/widgets\/Seconds.o",$/;"	s	array:10.arguments
+11	compile_commands.json	/^      "src\/widgets\/User.o",$/;"	s	array:11.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Blue.o",$/;"	s	array:16.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Bold.o",$/;"	s	array:15.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Cyan.o",$/;"	s	array:14.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Green.o",$/;"	s	array:22.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Pink.o",$/;"	s	array:20.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Purple.o",$/;"	s	array:18.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Red.o",$/;"	s	array:21.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Reset.o",$/;"	s	array:17.arguments
+11	compile_commands.json	/^      "src\/widgets\/colors\/Yellow.o",$/;"	s	array:19.arguments
+11	compile_commands.json	/^  {$/;"	o
+12	compile_commands.json	/^      "src\/commands\/init.cpp"$/;"	s	array:23.arguments
+12	compile_commands.json	/^      "src\/main.cpp"$/;"	s	array:0.arguments
+12	compile_commands.json	/^      "src\/parser.cpp"$/;"	s	array:4.arguments
+12	compile_commands.json	/^      "src\/shells\/Bash.cpp"$/;"	s	array:3.arguments
+12	compile_commands.json	/^      "src\/shells\/EShell.cpp"$/;"	s	array:1.arguments
+12	compile_commands.json	/^      "src\/shells\/Fish.cpp"$/;"	s	array:2.arguments
+12	compile_commands.json	/^      "src\/widgets\/Bat.cpp"$/;"	s	array:13.arguments
+12	compile_commands.json	/^      "src\/widgets\/Battery.cpp"$/;"	s	array:5.arguments
+12	compile_commands.json	/^      "src\/widgets\/Git.cpp"$/;"	s	array:12.arguments
+12	compile_commands.json	/^      "src\/widgets\/Hours.cpp"$/;"	s	array:6.arguments
+12	compile_commands.json	/^      "src\/widgets\/Minute.cpp"$/;"	s	array:9.arguments
+12	compile_commands.json	/^      "src\/widgets\/Path.cpp"$/;"	s	array:8.arguments
+12	compile_commands.json	/^      "src\/widgets\/RootSymol.cpp"$/;"	s	array:7.arguments
+12	compile_commands.json	/^      "src\/widgets\/Seconds.cpp"$/;"	s	array:10.arguments
+12	compile_commands.json	/^      "src\/widgets\/User.cpp"$/;"	s	array:11.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Blue.cpp"$/;"	s	array:16.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Bold.cpp"$/;"	s	array:15.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Cyan.cpp"$/;"	s	array:14.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Green.cpp"$/;"	s	array:22.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Pink.cpp"$/;"	s	array:20.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Purple.cpp"$/;"	s	array:18.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Red.cpp"$/;"	s	array:21.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Reset.cpp"$/;"	s	array:17.arguments
+12	compile_commands.json	/^      "src\/widgets\/colors\/Yellow.cpp"$/;"	s	array:19.arguments
+12	compile_commands.json	/^  {$/;"	o
+13	compile_commands.json	/^  {$/;"	o
+14	compile_commands.json	/^  {$/;"	o
+15	compile_commands.json	/^  {$/;"	o
+16	compile_commands.json	/^  {$/;"	o
+17	compile_commands.json	/^  {$/;"	o
+18	compile_commands.json	/^  {$/;"	o
+19	compile_commands.json	/^  {$/;"	o
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:0.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:1.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:10.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:11.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:12.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:13.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:14.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:15.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:16.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:17.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:18.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:19.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:2.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:20.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:21.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:22.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:23.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:3.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:4.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:5.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:6.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:7.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:8.arguments
+2	compile_commands.json	/^      "-Wall",$/;"	s	array:9.arguments
+2	compile_commands.json	/^  {$/;"	o
+20	compile_commands.json	/^  {$/;"	o
+21	compile_commands.json	/^  {$/;"	o
+22	compile_commands.json	/^  {$/;"	o
+23	compile_commands.json	/^  {$/;"	o
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:0.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:1.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:10.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:11.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:12.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:13.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:14.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:15.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:16.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:17.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:18.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:19.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:2.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:20.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:21.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:22.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:23.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:3.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:4.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:5.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:6.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:7.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:8.arguments
+3	compile_commands.json	/^      "-Wextra",$/;"	s	array:9.arguments
+3	compile_commands.json	/^  {$/;"	o
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:0.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:1.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:10.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:11.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:12.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:13.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:14.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:15.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:16.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:17.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:18.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:19.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:2.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:20.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:21.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:22.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:23.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:3.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:4.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:5.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:6.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:7.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:8.arguments
+4	compile_commands.json	/^      "-Werror",$/;"	s	array:9.arguments
+4	compile_commands.json	/^  {$/;"	o
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:0.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:1.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:10.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:11.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:12.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:13.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:14.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:15.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:16.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:17.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:18.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:19.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:2.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:20.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:21.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:22.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:23.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:3.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:4.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:5.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:6.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:7.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:8.arguments
+5	compile_commands.json	/^      "-pedantic",$/;"	s	array:9.arguments
+5	compile_commands.json	/^  {$/;"	o
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:0.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:1.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:10.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:11.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:12.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:13.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:14.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:15.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:16.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:17.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:18.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:19.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:2.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:20.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:21.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:22.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:23.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:3.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:4.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:5.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:6.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:7.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:8.arguments
+6	compile_commands.json	/^      "-march=native",$/;"	s	array:9.arguments
+6	compile_commands.json	/^  {$/;"	o
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:0.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:1.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:10.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:11.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:12.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:13.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:14.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:15.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:16.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:17.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:18.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:19.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:2.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:20.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:21.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:22.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:23.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:3.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:4.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:5.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:6.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:7.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:8.arguments
+7	compile_commands.json	/^      "-std=c++20",$/;"	s	array:9.arguments
+7	compile_commands.json	/^  {$/;"	o
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:0.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:1.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:10.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:11.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:12.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:13.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:14.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:15.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:16.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:17.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:18.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:19.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:2.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:20.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:21.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:22.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:23.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:3.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:4.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:5.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:6.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:7.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:8.arguments
+8	compile_commands.json	/^      "-I.\/src",$/;"	s	array:9.arguments
+8	compile_commands.json	/^  {$/;"	o
+9	compile_commands.json	/^      "-c",$/;"	s	array:0.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:1.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:10.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:11.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:12.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:13.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:14.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:15.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:16.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:17.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:18.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:19.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:2.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:20.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:21.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:22.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:23.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:3.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:4.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:5.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:6.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:7.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:8.arguments
+9	compile_commands.json	/^      "-c",$/;"	s	array:9.arguments
+9	compile_commands.json	/^  {$/;"	o
+Bash	src/shells/Bash.hpp	/^	class Bash : public IShell{$/;"	c	namespace:Shell
 Bash	src/shells/EShell.hpp	/^	Bash,$/;"	e	enum:Shells
 Bat	src/widgets/Bat.hpp	/^class Bat : public IWidget {$/;"	c
 Battery	src/widgets/Battery.hpp	/^class Battery : public IWidget {$/;"	c
@@ -95,12 +414,14 @@ Blue	src/widgets/colors/Blue.hpp	/^class Blue : public IWidget {$/;"	c
 Bold	src/widgets/EWidget.hpp	/^	Bold,$/;"	e	enum:EWidgets
 Bold	src/widgets/colors/Bold.hpp	/^class Bold : public IWidget {$/;"	c
 CC	Makefile	/^CC = clang++$/;"	m
-CFLAGS	Makefile	/^CFLAGS   = -Wall -Wextra -Werror -pedantic -march=native -I.\/src$/;"	m
-CXXFLAGS	Makefile	/^CXXFLAGS = -Wall -Wextra -Werror -pedantic -march=native -std=c++20 -I.\/src$/;"	m
+CFLAGS	Makefile	/^CFLAGS   = -O2 -Wall -Wextra -Werror -pedantic -march=native -I.\/src$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -O2 -Wall -Wextra -Werror -pedantic -march=native -std=c++20 -I.\/src$/;"	m
 Cyan	src/widgets/EWidget.hpp	/^	Cyan,$/;"	e	enum:EWidgets
 Cyan	src/widgets/colors/Cyan.hpp	/^class Cyan : public IWidget {$/;"	c
+EShells	src/shells/EShell.hpp	/^namespace EShells {$/;"	n
 EWidgets	src/widgets/EWidget.hpp	/^enum EWidgets {$/;"	g
 Fish	src/shells/EShell.hpp	/^	Fish,$/;"	e	enum:Shells
+Fish	src/shells/Fish.hpp	/^	class Fish : public IShell{$/;"	c	namespace:Shell
 Git	src/widgets/EWidget.hpp	/^	Git,$/;"	e	enum:EWidgets
 Git	src/widgets/Git.hpp	/^class Git : public IWidget {$/;"	c
 Green	src/widgets/EWidget.hpp	/^	Green,$/;"	e	enum:EWidgets
@@ -115,6 +436,7 @@ Minute	src/widgets/Minute.hpp	/^class Minute : public IWidget {$/;"	c
 NAME	Makefile	/^NAME = prompter$/;"	m
 OBJ	Makefile	/^OBJ := $(OBJ:.cpp=.o)$/;"	m
 OBJ	Makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
+Parser	src/parser.hpp	/^namespace Parser {$/;"	n
 Path	src/widgets/EWidget.hpp	/^	Path,$/;"	e	enum:EWidgets
 Path	src/widgets/Path.hpp	/^class Path : public IWidget {$/;"	c
 Pink	src/widgets/EWidget.hpp	/^	Pink,$/;"	e	enum:EWidgets
@@ -123,31 +445,136 @@ Purple	src/widgets/EWidget.hpp	/^	Purple,$/;"	e	enum:EWidgets
 Purple	src/widgets/colors/Purple.hpp	/^class Purple : public IWidget {$/;"	c
 Red	src/widgets/EWidget.hpp	/^	Red,$/;"	e	enum:EWidgets
 Red	src/widgets/colors/Red.hpp	/^class Red : public IWidget {$/;"	c
+Reset	src/widgets/colors/Reset.hpp	/^class Reset : public IWidget {$/;"	c
 RootSymol	src/widgets/EWidget.hpp	/^	RootSymol,$/;"	e	enum:EWidgets
 RootSymol	src/widgets/RootSymol.hpp	/^class RootSymol : public IWidget {$/;"	c
 SRC	Makefile	/^SRC = .\/src\/main.cpp \\$/;"	m
 Seconds	src/widgets/EWidget.hpp	/^	Seconds,$/;"	e	enum:EWidgets
 Seconds	src/widgets/Seconds.hpp	/^class Seconds : public IWidget {$/;"	c
+Separator	src/widgets/Separator.hpp	/^    Separator(const std::string& sep = " ") : separator(sep) {}$/;"	f	class:Separator
+Separator	src/widgets/Separator.hpp	/^class Separator : public IWidget {$/;"	c
+Shell	src/shells/Bash.hpp	/^namespace Shell {$/;"	n
+Shell	src/shells/Fish.hpp	/^namespace Shell {$/;"	n
 Shells	src/shells/EShell.hpp	/^enum Shells {$/;"	g
+Unknow	src/shells/EShell.hpp	/^	Unknow,$/;"	e	enum:Shells
 User	src/widgets/EWidget.hpp	/^	User,$/;"	e	enum:EWidgets
 User	src/widgets/User.hpp	/^class User : public IWidget {$/;"	c
 Yellow	src/widgets/EWidget.hpp	/^	Yellow,$/;"	e	enum:EWidgets
 Yellow	src/widgets/colors/Yellow.hpp	/^class Yellow : public IWidget {$/;"	c
-Zh	src/shells/EShell.hpp	/^	Zh,$/;"	e	enum:Shells
-addWidget	src/shells/Bash.cpp	/^void Bash::addWidget(std::shared_ptr<IWidget> widget) {$/;"	f	class:Bash	typeref:typename:void
+Zsh	src/shells/EShell.hpp	/^	Zsh,$/;"	e	enum:Shells
+addWidget	src/shells/Bash.cpp	/^void Shell::Bash::addWidget(std::shared_ptr<IWidget> widget) {$/;"	f	class:Shell::Bash	typeref:typename:void
+addWidget	src/shells/Fish.cpp	/^void Shell::Fish::addWidget(std::shared_ptr<IWidget> widget) {$/;"	f	class:Shell::Fish	typeref:typename:void
 all	Makefile	/^all: $(NAME)$/;"	t
 arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:0
 arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:1
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:10
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:11
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:12
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:13
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:14
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:15
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:16
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:17
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:18
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:19
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:2
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:20
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:21
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:22
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:23
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:3
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:4
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:5
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:6
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:7
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:8
+arguments	compile_commands.json	/^    "arguments": [$/;"	a	object:9
 clean	Makefile	/^clean:$/;"	t
-directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/prompt",$/;"	s	object:0
-directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/prompt",$/;"	s	object:1
-exportPrompt	src/shells/Bash.cpp	/^std::string Bash::exportPrompt() {$/;"	f	class:Bash	typeref:typename:std::string
-file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/prompt\/src\/main.cpp",$/;"	s	object:0
-file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/prompt\/src\/widgets\/Git.cpp",$/;"	s	object:1
-list	src/shells/Bash.hpp	/^	std::vector<std::shared_ptr<IWidget>> list;$/;"	m	class:Bash	typeref:typename:std::vector<std::shared_ptr<IWidget>>
+commands	src/commands/commands.hpp	/^namespace commands {$/;"	n
+convert	src/parser.cpp	/^std::string Parser::convert(std::string file) {$/;"	f	class:Parser	typeref:typename:std::string
+default_config	src/commands/init.cpp	/^std::vector<std::shared_ptr<IWidget>> default_config() {$/;"	f	typeref:typename:std::vector<std::shared_ptr<IWidget>>
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:0
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:1
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:10
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:11
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:12
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:13
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:14
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:15
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:16
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:17
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:18
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:19
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:2
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:20
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:21
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:22
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:23
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:3
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:4
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:5
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:6
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:7
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:8
+directory	compile_commands.json	/^    "directory": "\/home\/poulpy\/projects\/psst",$/;"	s	object:9
+exportPrompt	src/shells/Bash.cpp	/^std::string Shell::Bash::exportPrompt() {$/;"	f	class:Shell::Bash	typeref:typename:std::string
+exportPrompt	src/shells/Fish.cpp	/^std::string Shell::Fish::exportPrompt() {$/;"	f	class:Shell::Fish	typeref:typename:std::string
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/commands\/init.cpp",$/;"	s	object:23
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/main.cpp",$/;"	s	object:0
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/parser.cpp",$/;"	s	object:4
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/shells\/Bash.cpp",$/;"	s	object:3
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/shells\/EShell.cpp",$/;"	s	object:1
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/shells\/Fish.cpp",$/;"	s	object:2
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Bat.cpp",$/;"	s	object:13
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Battery.cpp",$/;"	s	object:5
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Git.cpp",$/;"	s	object:12
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Hours.cpp",$/;"	s	object:6
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Minute.cpp",$/;"	s	object:9
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Path.cpp",$/;"	s	object:8
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/RootSymol.cpp",$/;"	s	object:7
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Seconds.cpp",$/;"	s	object:10
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/User.cpp",$/;"	s	object:11
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Blue.cpp",$/;"	s	object:16
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Bold.cpp",$/;"	s	object:15
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Cyan.cpp",$/;"	s	object:14
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Green.cpp",$/;"	s	object:22
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Pink.cpp",$/;"	s	object:20
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Purple.cpp",$/;"	s	object:18
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Red.cpp",$/;"	s	object:21
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Reset.cpp",$/;"	s	object:17
+file	compile_commands.json	/^    "file": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Yellow.cpp",$/;"	s	object:19
+from_str	src/shells/EShell.cpp	/^Shells EShells::from_str(std::string base){$/;"	f	class:EShells	typeref:typename:Shells
+get_shell	src/commands/init.cpp	/^std::string get_shell(std::string s) {$/;"	f	typeref:typename:std::string
+init	src/commands/init.cpp	/^void commands::init() {$/;"	f	class:commands	typeref:typename:void
+list	src/shells/Bash.hpp	/^		std::vector<std::shared_ptr<IWidget>> list;$/;"	m	class:Shell::Bash	typeref:typename:std::vector<std::shared_ptr<IWidget>>
+list	src/shells/Fish.hpp	/^		std::vector<std::shared_ptr<IWidget>> list;$/;"	m	class:Shell::Fish	typeref:typename:std::vector<std::shared_ptr<IWidget>>
 main	src/main.cpp	/^int main(int argc, char** argv) {$/;"	f	typeref:typename:int
-output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/prompt\/src\/main.o"$/;"	s	object:0
-output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/prompt\/src\/widgets\/Git.o"$/;"	s	object:1
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/commands\/init.o"$/;"	s	object:23
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/main.o"$/;"	s	object:0
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/parser.o"$/;"	s	object:4
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/shells\/Bash.o"$/;"	s	object:3
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/shells\/EShell.o"$/;"	s	object:1
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/shells\/Fish.o"$/;"	s	object:2
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Bat.o"$/;"	s	object:13
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Battery.o"$/;"	s	object:5
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Git.o"$/;"	s	object:12
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Hours.o"$/;"	s	object:6
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Minute.o"$/;"	s	object:9
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Path.o"$/;"	s	object:8
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/RootSymol.o"$/;"	s	object:7
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/Seconds.o"$/;"	s	object:10
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/User.o"$/;"	s	object:11
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Blue.o"$/;"	s	object:16
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Bold.o"$/;"	s	object:15
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Cyan.o"$/;"	s	object:14
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Green.o"$/;"	s	object:22
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Pink.o"$/;"	s	object:20
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Purple.o"$/;"	s	object:18
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Red.o"$/;"	s	object:21
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Reset.o"$/;"	s	object:17
+output	compile_commands.json	/^    "output": "\/home\/poulpy\/projects\/psst\/src\/widgets\/colors\/Yellow.o"$/;"	s	object:19
+parse_file	src/parser.cpp	/^std::vector<std::string> Parser::parse_file(std::string file) {$/;"	f	class:Parser	typeref:typename:std::vector<std::string>
+psst	README.md	/^# psst$/;"	c
 re	Makefile	/^re: clean all$/;"	t
 render	src/widgets/Bat.cpp	/^std::string Bat::render() {$/;"	f	class:Bat	typeref:typename:std::string
 render	src/widgets/Battery.cpp	/^std::string Battery::render() {$/;"	f	class:Battery	typeref:typename:std::string
@@ -157,6 +584,7 @@ render	src/widgets/Minute.cpp	/^std::string Minute::render() {$/;"	f	class:Minut
 render	src/widgets/Path.cpp	/^std::string Path::render() {$/;"	f	class:Path	typeref:typename:std::string
 render	src/widgets/RootSymol.cpp	/^std::string RootSymol::render() {$/;"	f	class:RootSymol	typeref:typename:std::string
 render	src/widgets/Seconds.cpp	/^std::string Seconds::render() {$/;"	f	class:Seconds	typeref:typename:std::string
+render	src/widgets/Separator.hpp	/^    std::string render() {$/;"	f	class:Separator	typeref:typename:std::string
 render	src/widgets/User.cpp	/^std::string User::render() {$/;"	f	class:User	typeref:typename:std::string
 render	src/widgets/colors/Blue.cpp	/^std::string Blue::render() {$/;"	f	class:Blue	typeref:typename:std::string
 render	src/widgets/colors/Bold.cpp	/^std::string Bold::render() {$/;"	f	class:Bold	typeref:typename:std::string
@@ -165,13 +593,18 @@ render	src/widgets/colors/Green.cpp	/^std::string Green::render() {$/;"	f	class:
 render	src/widgets/colors/Pink.cpp	/^std::string Pink::render() {$/;"	f	class:Pink	typeref:typename:std::string
 render	src/widgets/colors/Purple.cpp	/^std::string Purple::render() {$/;"	f	class:Purple	typeref:typename:std::string
 render	src/widgets/colors/Red.cpp	/^std::string Red::render() {$/;"	f	class:Red	typeref:typename:std::string
+render	src/widgets/colors/Reset.cpp	/^std::string Reset::render() {$/;"	f	class:Reset	typeref:typename:std::string
 render	src/widgets/colors/Yellow.cpp	/^std::string Yellow::render() {$/;"	f	class:Yellow	typeref:typename:std::string
-~Bash	src/shells/Bash.hpp	/^	~Bash(){};$/;"	f	class:Bash
+replace	src/parser.cpp	/^bool replace(std::string& str, const std::string& from, const std::string& to) {$/;"	f	typeref:typename:bool
+separator	src/widgets/Separator.hpp	/^    std::string separator;$/;"	m	class:Separator	typeref:typename:std::string
+trim	src/commands/init.cpp	/^std::string trim(const std::string& str) {$/;"	f	typeref:typename:std::string
+~Bash	src/shells/Bash.hpp	/^		~Bash(){};$/;"	f	class:Shell::Bash
 ~Bat	src/widgets/Bat.cpp	/^Bat::~Bat() {$/;"	f	class:Bat
 ~Battery	src/widgets/Battery.cpp	/^Battery::~Battery() {$/;"	f	class:Battery
 ~Blue	src/widgets/colors/Blue.cpp	/^Blue::~Blue() {$/;"	f	class:Blue
 ~Bold	src/widgets/colors/Bold.cpp	/^Bold::~Bold() {$/;"	f	class:Bold
 ~Cyan	src/widgets/colors/Cyan.cpp	/^Cyan::~Cyan() {$/;"	f	class:Cyan
+~Fish	src/shells/Fish.hpp	/^		~Fish(){};$/;"	f	class:Shell::Fish
 ~Git	src/widgets/Git.cpp	/^Git::~Git() {$/;"	f	class:Git
 ~Green	src/widgets/colors/Green.cpp	/^Green::~Green() {$/;"	f	class:Green
 ~Hours	src/widgets/Hours.cpp	/^Hours::~Hours() {$/;"	f	class:Hours
@@ -182,6 +615,7 @@ render	src/widgets/colors/Yellow.cpp	/^std::string Yellow::render() {$/;"	f	clas
 ~Pink	src/widgets/colors/Pink.cpp	/^Pink::~Pink() {$/;"	f	class:Pink
 ~Purple	src/widgets/colors/Purple.cpp	/^Purple::~Purple() {$/;"	f	class:Purple
 ~Red	src/widgets/colors/Red.cpp	/^Red::~Red() {$/;"	f	class:Red
+~Reset	src/widgets/colors/Reset.hpp	/^	~Reset() {};$/;"	f	class:Reset
 ~RootSymol	src/widgets/RootSymol.cpp	/^RootSymol::~RootSymol() {$/;"	f	class:RootSymol
 ~Seconds	src/widgets/Seconds.cpp	/^Seconds::~Seconds() {$/;"	f	class:Seconds
 ~User	src/widgets/User.cpp	/^User::~User() {$/;"	f	class:User
