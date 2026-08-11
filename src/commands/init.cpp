@@ -11,6 +11,7 @@
 #include "widgets/Separator.hpp"
 #include "widgets/User.hpp"
 #include "widgets/colors/Cyan.hpp"
+#include "widgets/colors/Bold.hpp"
 #include "widgets/colors/Red.hpp"
 #include "widgets/colors/Purple.hpp"
 #include "widgets/colors/Reset.hpp"
@@ -37,26 +38,26 @@ std::string get_shell(std::string s) {
 
 std::vector<std::shared_ptr<IWidget>> default_config() {
     return {
-        std::make_shared<Separator>("\n╭─ "),
-        
+        std::make_shared<Separator>("\n\n"),
         std::make_shared<Cyan>(),
-        std::make_shared<Separator>(""),
         std::make_shared<User>(),
         std::make_shared<Reset>(),
-        
+
         std::make_shared<Separator>(" "),
         std::make_shared<Path>(),
         
         std::make_shared<Separator>(" "),
-        std::make_shared<Purple>(),
+        std::make_shared<Red>(),
         std::make_shared<Git>(),
         std::make_shared<Reset>(),
 
         std::make_shared<Separator>(" "),
         std::make_shared<Battery>(),
+        std::make_shared<Separator>("\n"),
         
-        std::make_shared<Separator>("\n╰─"),
-        std::make_shared<RootSymol>(),
+        std::make_shared<Purple>(),
+        std::make_shared<Bold>(),
+        std::make_shared<Separator>(" "),
         std::make_shared<Reset>(),
         std::make_shared<Separator>(" ")
     };
