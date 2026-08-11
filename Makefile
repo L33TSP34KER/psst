@@ -35,7 +35,7 @@ OBJ := $(OBJ:.cpp=.o)
 
 CFLAGS   = -O2 -Wall -Wextra -Werror -pedantic -march=native -I./src
 CXXFLAGS = -O2 -Wall -Wextra -Werror -pedantic -march=native -std=c++20 -I./src
-LDFLAGS  = -I./src
+LDFLAGS  = -static
 NAME = prompter
 
 CC = clang++
