@@ -3,6 +3,7 @@
 #include "parser.hpp"
 #include "widgets/Battery.hpp"
 #include "widgets/Git.hpp"
+#include "widgets/GitBranch.hpp"
 #include "widgets/Hours.hpp"
 #include "widgets/IWidget.hpp"
 #include "widgets/Minute.hpp"
@@ -38,28 +39,30 @@ std::string get_shell(std::string s) {
 
 std::vector<std::shared_ptr<IWidget>> default_config() {
     return {
-        std::make_shared<Separator>("\n\n"),
-        std::make_shared<Cyan>(),
-        std::make_shared<User>(),
-        std::make_shared<Reset>(),
+        std::make_unique<Separator>("\n\n"),
+        std::make_unique<Cyan>(),
+        std::make_unique<User>(),
+        std::make_unique<Reset>(),
 
-        std::make_shared<Separator>(" "),
-        std::make_shared<Path>(),
+        std::make_unique<Separator>(" "),
+        std::make_unique<Path>(),
         
-        std::make_shared<Separator>(" "),
-        std::make_shared<Red>(),
-        std::make_shared<Git>(),
-        std::make_shared<Reset>(),
+        std::make_unique<Separator>(" "),
+        std::make_unique<Red>(),
+        std::make_unique<Git>(),
+        std::make_unique<Separator>(" "),
+        std::make_unique<GitBranch>(),
+        std::make_unique<Reset>(),
 
-        std::make_shared<Separator>(" "),
-        std::make_shared<Battery>(),
-        std::make_shared<Separator>("\n"),
+        std::make_unique<Separator>(" "),
+        std::make_unique<Battery>(),
+        std::make_unique<Separator>("\n"),
         
-        std::make_shared<Purple>(),
-        std::make_shared<Bold>(),
-        std::make_shared<Separator>(" "),
-        std::make_shared<Reset>(),
-        std::make_shared<Separator>(" ")
+        std::make_unique<Purple>(),
+        std::make_unique<Bold>(),
+        std::make_unique<Separator>(" "),
+        std::make_unique<Reset>(),
+        std::make_unique<Separator>(" ")
     };
 }
 
