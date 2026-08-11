@@ -10,6 +10,7 @@
 #include "widgets/Path.hpp"
 #include "widgets/RootSymol.hpp"
 #include "widgets/Separator.hpp"
+#include "widgets/ShortPath.hpp"
 #include "widgets/User.hpp"
 #include "widgets/colors/Cyan.hpp"
 #include "widgets/colors/Bold.hpp"
@@ -49,7 +50,7 @@ std::vector<std::shared_ptr<IWidget>> default_config() {
         
         std::make_unique<Separator>(" "),
         std::make_unique<Red>(),
-        std::make_unique<Git>(),
+        std::make_unique<Git>(5),
         std::make_unique<Separator>(" "),
         std::make_unique<GitBranch>(),
         std::make_unique<Reset>(),
@@ -80,8 +81,8 @@ std::string trim(const std::string& str) {
     return std::string(start, end + 1);
 }
 
-void commands::init() {
-	if (!std::getenv("SHELL")) return;
+int commands::init() {
+	if (!std::getenv("SHELL")) return 1;
 	Red red;
 	Reset reset;
 	std::string shell_str = get_shell(std::getenv("SHELL"));
@@ -90,7 +91,7 @@ void commands::init() {
 	switch (EShells::from_str(shell_str)) {
 		case Shells::Unknow:
 			std::cerr << "Shell not supported" << std::endl;
-			return;
+			return 1;
 		case Shells::Bash:
 			shell = std::make_unique<Shell::Bash>();
 			break;
@@ -106,4 +107,5 @@ void commands::init() {
     }
     std::string result = shell->exportPrompt();
     std::cout << trim(Parser::convert(result)) << std::endl;
+    return 0;
 }

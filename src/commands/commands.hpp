@@ -1,5 +1,6 @@
 #pragma once
 
 namespace commands {
-	void init();
+	int init();
+	int help_menu();
 }

@@ -27,5 +27,5 @@ std::string Git::render() {
 		return final_str;
 	}
 	std::getline(git_file, final_str);
-	return final_str.substr(0, 4);
+	return final_str.substr(0, max_chars);
 }
