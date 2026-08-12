@@ -15,6 +15,9 @@ To edit the prompt just open src/commands/init.cpp to put any prompt you want.
 
 ### my own config
 ![mine](imgs/mine.png)
+### cross shell
+as you can see you're config will be the same between shell
+![cross shell](imgs/cross_shell.png)
 
 ```cpp
  return {
@@ -55,7 +58,9 @@ To edit the prompt just open src/commands/init.cpp to put any prompt you want.
 You can get the list of widgets in src/widgets/ If you want to add compatibility for a shell you can add it in src/shells/
 
 # 4. Performance
-Benchmark 1: prompter
+```
   Time (mean ± σ):       1.1 ms ±   0.4 ms    [User: 1.1 ms, System: 1.4 ms]
   Range (min … max):     0.5 ms …   2.8 ms    475 runs
+```
+
 

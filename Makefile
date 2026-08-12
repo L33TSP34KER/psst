@@ -41,7 +41,8 @@ CXXFLAGS = -O2 -Wall -Wextra -Werror -pedantic -march=native -std=c++20 -I./src
 LDFLAGS  = -static
 NAME = prompter
 
-CC = clang++
+CC  = ccache clang++
+CXX = ccache g++
 
 
 all: $(NAME)
