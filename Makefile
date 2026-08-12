@@ -10,9 +10,11 @@ SRC = ./src/main.cpp \
 	./src/shells/Fish.cpp \
 	./src/shells/Bash.cpp \
 	./src/parser.cpp \
+	./src/widgets/ShortPath.cpp \
 	./src/widgets/Battery.cpp \
 	./src/widgets/Hours.cpp \
 	./src/widgets/RootSymol.cpp \
+	./src/widgets/GitBranch.cpp \
 	./src/widgets/Path.cpp \
 	./src/widgets/Minute.cpp \
 	./src/widgets/Seconds.cpp \
@@ -28,7 +30,8 @@ SRC = ./src/main.cpp \
 	./src/widgets/colors/Pink.cpp \
 	./src/widgets/colors/Red.cpp \
 	./src/widgets/colors/Green.cpp \
-	./src/commands/init.cpp
+	./src/commands/init.cpp \
+	./src/commands/help.cpp
 
 OBJ = $(SRC:.c=.o)
 OBJ := $(OBJ:.cpp=.o)
