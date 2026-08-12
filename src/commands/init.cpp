@@ -60,12 +60,12 @@ std::vector<std::shared_ptr<IWidget>> default_config() {
         std::make_unique<Separator>(" "),
         std::make_unique<Battery>(),
         std::make_unique<Purple>(),
-        std::make_unique<Separator>("\n"),
+        std::make_unique<Separator>("\n", 0),
         std::make_unique<Reset>(),
         
         std::make_unique<Purple>(),
         std::make_unique<Bold>(),
-        std::make_unique<Separator>(" "),
+        std::make_unique<Separator>(" ", 0),
         std::make_unique<Reset>(),
         std::make_unique<Separator>(" ")
     };

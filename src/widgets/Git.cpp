@@ -1,4 +1,5 @@
 #include "widgets/Git.hpp"
+#include "widgets/general.hpp"
 
 Git::~Git() {
 }
@@ -23,9 +24,14 @@ std::string get_git_branch() {
 std::string Git::render() {
 	std::string final_str;
 	std::ifstream git_file(".git/refs/heads/" + get_git_branch());
+    config::print = 1;
 	if (!git_file.is_open()) {
+        config::print = 0;
 		return final_str;
 	}
 	std::getline(git_file, final_str);
+    if (final_str.length() < 1){
+        config::print = 0;
+    }
 	return final_str.substr(0, max_chars);
 }

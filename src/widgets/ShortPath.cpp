@@ -1,9 +1,11 @@
 #include "widgets/ShortPath.hpp"
+#include "widgets/general.hpp"
 
 ShortPath::~ShortPath() {
 }
 
 std::string ShortPath::render() {
+    config::print = 1;
     std::string path = std::getenv("PWD");
     std::string final_string;
     int last_index = 0;
