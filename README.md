@@ -8,7 +8,9 @@ With this tool i tried to implement suckless mentality.
 To edit the prompt just open src/commands/init.cpp to put any prompt you want.
 ### examples
 ![example1](imgs/ex1.png)
+
 ![example2](imgs/ex2.png)
+
 ![example3](imgs/ex3.png)
 
 # 3. Contributing
