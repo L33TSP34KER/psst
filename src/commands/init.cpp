@@ -40,33 +40,32 @@ std::string get_shell(std::string s) {
 
 std::vector<std::shared_ptr<IWidget>> default_config() {
     return {
-        std::make_unique<Bold>(),
         std::make_unique<Purple>(),
-        std::make_unique<Separator>("\n"),
-        std::make_unique<Cyan>(),
-        std::make_unique<Separator>(" "),
-        std::make_unique<User>(),
-        std::make_unique<Separator>(" "),
+        std::make_unique<Separator>("\n "),
         std::make_unique<Reset>(),
-        std::make_unique<ShortPath>(),
+        std::make_unique<Cyan>(),
+        std::make_unique<User>(),
         std::make_unique<Reset>(),
 
-        /*
+        std::make_unique<Separator>(" "),
+        std::make_unique<Path>(),
+        
         std::make_unique<Separator>(" "),
         std::make_unique<Red>(),
         std::make_unique<Git>(5),
         std::make_unique<Separator>(" "),
         std::make_unique<GitBranch>(),
         std::make_unique<Reset>(),
-        */
 
         std::make_unique<Separator>(" "),
         std::make_unique<Battery>(),
-        std::make_unique<Separator>(""),
+        std::make_unique<Purple>(),
+        std::make_unique<Separator>("\n"),
+        std::make_unique<Reset>(),
         
         std::make_unique<Purple>(),
         std::make_unique<Bold>(),
-        std::make_unique<Separator>(" "),
+        std::make_unique<Separator>(" "),
         std::make_unique<Reset>(),
         std::make_unique<Separator>(" ")
     };
