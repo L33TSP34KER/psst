@@ -46,13 +46,20 @@ That makes psst a good fit if you want:
 
 On an older ThinkPad with an AMD PRO A12, psst feels almost instant. The prompt is usually ready before the next command is typed, while heavier prompts can visibly pause after every command. That difference is especially noticeable when changing directories, switching Git branches, or running many short commands.
 
-The default configuration measured about **2.1 ms per prompt render** locally:
+The default configuration measured about **1.7 ms per prompt render** locally:
 
 ```text
-mean: 2.1 ms ± 0.5 ms
-range (min .. max): 1.6 ms .. 8.7 ms
-runs: 346
+mean: 1.7 ms ± 0.7 ms
+range (min .. max): 0.9 ms .. 6.4 ms
+runs: 480
 ```
+
+Measured locally with 1,000 warmup runs from the repository root, using matching user, path, Git, battery, newline, and prompt-character modules from `bench/fixtures/starship-minimal.toml`:
+
+| Prompt | Mean | Range (min .. max) | Relative speed |
+| --- | ---: | ---: | ---: |
+| [psst](https://github.com/L33TSP34KER) | 1.7 ms ± 0.7 ms | 0.9 ms .. 6.4 ms | 1x |
+| Starship | 16.8 ms ± 2.3 ms | 12.8 ms .. 25.0 ms | 10.1x slower |
 
 psst stays fast because it is a small native executable with a fixed C++ widget list. It does not launch a collection of shell helpers or parse a large runtime configuration for every redraw. Actual results depend on hardware, filesystem state, repository size, and enabled widgets, so this is a baseline rather than a universal guarantee.
 
@@ -138,6 +145,21 @@ std::vector<std::shared_ptr<IWidget>> default_config() {
 ```
 
 The order matters. Every widget is rendered from left to right and concatenated into one prompt.
+
+### Minimal configuration
+
+For a quieter prompt, replace `default_config()` with a small set of widgets:
+
+```cpp
+std::vector<std::shared_ptr<IWidget>> default_config() {
+    return {
+        std::make_unique<User>(),
+        std::make_unique<Separator>(" "),
+        std::make_unique<Path>(),
+        std::make_unique<Separator>("\n> ")
+    };
+}
+```
 
 `PythonVenv`, `NodeVersion`, `ExitStatus`, `Hostname`, and `SSHSession` are available but are not enabled in the default prompt. Add them explicitly when you want them:
 
