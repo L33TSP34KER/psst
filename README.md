@@ -54,12 +54,15 @@ range (min .. max): 0.9 ms .. 6.4 ms
 runs: 480
 ```
 
-Measured locally with 1,000 warmup runs from the repository root, using matching user, path, Git, battery, newline, and prompt-character modules from `bench/fixtures/starship-minimal.toml`:
+Measured locally with 1,000 warmup runs from the repository root:
 
-| Prompt | Mean | Range (min .. max) | Relative speed |
-| --- | ---: | ---: | ---: |
-| [psst](https://github.com/L33TSP34KER) | 1.7 ms ± 0.7 ms | 0.9 ms .. 6.4 ms | 1x |
-| Starship | 16.8 ms ± 2.3 ms | 12.8 ms .. 25.0 ms | 10.1x slower |
+| Prompt | Configuration | Mean | Range (min .. max) | Relative speed |
+| --- | --- | ---: | ---: | ---: |
+| [psst](https://github.com/L33TSP34KER) | Default | 1.7 ms ± 0.7 ms | 0.9 ms .. 6.4 ms | 1x |
+| Starship | Matched modules | 16.8 ms ± 2.3 ms | 12.8 ms .. 25.0 ms | 9.9x slower |
+| Starship | Default | 32.4 ms ± 4.5 ms | 26.8 ms .. 51.1 ms | 19.1x slower |
+
+The matched Starship configuration is in `bench/fixtures/starship-minimal.toml`.
 
 psst stays fast because it is a small native executable with a fixed C++ widget list. It does not launch a collection of shell helpers or parse a large runtime configuration for every redraw. Actual results depend on hardware, filesystem state, repository size, and enabled widgets, so this is a baseline rather than a universal guarantee.
 
