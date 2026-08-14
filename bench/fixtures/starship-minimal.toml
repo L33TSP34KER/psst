@@ -1,25 +1,24 @@
-# Minimal starship config, roughly equivalent to psst's default prompt:
-# user, path, git commit + branch, battery, newline, prompt char.
+# Starship config matching psst's default prompt components and layout.
 # Used to measure how much of starship's cost is its default config
 # vs. its fixed startup overhead.
-format = "$username$directory$git_branch$git_commit$battery$line_break$character"
+format = "[\n ](purple)$username $directory $git_commit $git_branch $battery [\n](purple)[ ](purple)"
 add_newline = false
 
 [username]
 show_always = true
-format = "[$user]($style) "
+format = "[$user](cyan)"
 
 [directory]
-format = "[$path]($style) "
+format = "[$path](white)"
 
 [git_branch]
-format = "[$branch]($style) "
+format = "[$branch](red)"
 
 [git_commit]
-format = "[\\($hash\\)]($style) "
+format = "[\\($hash\\)](red)"
 
 [battery]
-format = "[$percentage]($style) "
+format = "[$percentage]($style)"
 
 [[battery.display]]
 threshold = 100

@@ -11,6 +11,8 @@
 
 <br>
 
+![psst hero](imgs/hero.png)
+
 **psst** is a small, cross-shell prompt generator written in C++.
 
 The project follows a deliberately simple model inspired by suckless software:
