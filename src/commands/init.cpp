@@ -6,8 +6,11 @@
 #include "widgets/GitBranch.hpp"
 #include "widgets/Hours.hpp"
 #include "widgets/IWidget.hpp"
+#include "widgets/ExitStatus.hpp"
+#include "widgets/general.hpp"
 #include "widgets/Minute.hpp"
 #include "widgets/Path.hpp"
+#include "widgets/PythonVenv.hpp"
 #include "widgets/RootSymol.hpp"
 #include "widgets/Separator.hpp"
 #include "widgets/ShortPath.hpp"
@@ -60,6 +63,7 @@ std::vector<std::shared_ptr<IWidget>> default_config() {
         std::make_unique<Separator>(" "),
         std::make_unique<Battery>(),
         std::make_unique<Purple>(),
+        std::make_unique<Separator>(" "),
         std::make_unique<Separator>("\n", 0),
         std::make_unique<Reset>(),
         
@@ -85,8 +89,9 @@ std::string trim(const std::string& str) {
     return std::string(start, end + 1);
 }
 
-int commands::init() {
+int commands::init(int status) {
 	if (!std::getenv("SHELL")) return 1;
+	config::status = status;
 	Red red;
 	Reset reset;
 	std::string shell_str = get_shell(std::getenv("SHELL"));
