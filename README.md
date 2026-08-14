@@ -2,6 +2,11 @@
   <h1>psst</h1>
   <p>A tiny, fast, cross-shell prompt written in C++.</p>
   <p>
+    <a href="https://github.com/L33TSP34KER/psst/actions/workflows/c-cpp.yml"><img src="https://github.com/L33TSP34KER/psst/actions/workflows/c-cpp.yml/badge.svg" alt="CI"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue" alt="License: Apache-2.0"></a>
+    <img src="https://img.shields.io/badge/C%2B%2B-20-blue" alt="C++20">
+  </p>
+  <p>
     <a href="#examples">Examples</a> ·
     <a href="#performance">Fast startup</a> ·
     <a href="#customize-the-prompt">Source-level customization</a> ·
@@ -86,7 +91,7 @@ Requirements:
 - `ccache` is optional; the Makefile uses it when available. It is recommended if you wish to contribute, since it makes rebuilding much easier
 
 ```sh
-git clone https://github.com/poulpy/psst.git
+git clone https://github.com/L33TSP34KER/psst.git
 cd psst
 make
 ```
