@@ -11,11 +11,11 @@ std::string Project::render() {
     std::string result;
 
     if (exists("Cargo.toml"))
-        result = "rust";
+        result = rust_label;
     else if (exists("CMakeLists.txt"))
-        result = "cmake";
+        result = cmake_label;
     else if (exists("Makefile") || exists("makefile"))
-        result = "make";
+        result = make_label;
 
     config::print = !result.empty();
     return result;

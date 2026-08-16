@@ -76,6 +76,7 @@ int main() {
     assert(tmux.render() == "tmux");
 
     Project project;
+    Project labeled("rs", "cm", "mk");
     char cwd[4096];
     assert(getcwd(cwd, sizeof(cwd)) != nullptr);
     char tmpdir[] = "/tmp/psst_project_test_XXXXXX";
@@ -86,14 +87,17 @@ int main() {
     assert(config::print == 0);
     assert(close(open("Cargo.toml", O_CREAT | O_WRONLY, 0644)) == 0);
     assert(project.render() == "rust");
+    assert(labeled.render() == "rs");
     assert(close(open("CMakeLists.txt", O_CREAT | O_WRONLY, 0644)) == 0);
     assert(project.render() == "rust");
     assert(unlink("Cargo.toml") == 0);
     assert(project.render() == "cmake");
+    assert(labeled.render() == "cm");
     assert(close(open("Makefile", O_CREAT | O_WRONLY, 0644)) == 0);
     assert(project.render() == "cmake");
     assert(unlink("CMakeLists.txt") == 0);
     assert(project.render() == "make");
+    assert(labeled.render() == "mk");
     assert(unlink("Makefile") == 0);
 
     assert(chdir(cwd) == 0);

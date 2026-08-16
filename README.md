@@ -196,7 +196,7 @@ std::make_unique<SSHSession>(),
 | `ShortPath` | Shortened working directory |
 | `PythonVenv` | Active Python virtual environment name, when `VIRTUAL_ENV` is set |
 | `NodeVersion` | Active Node.js version from `NODE_VERSION` |
-| `Project` | Project type from marker files: `rust` (`Cargo.toml`), `cmake` (`CMakeLists.txt`), `make` (`Makefile`) |
+| `Project` | Project type from marker files: `rust`/`cmake`/`make` — custom labels with `Project("rs", "cm", "mk")` |
 | `ExitStatus` | Previous command status, when non-zero |
 | `Hostname` | Current host name from `HOSTNAME` |
 | `SSHSession` | Prints `ssh` when `SSH_CONNECTION` is set |
