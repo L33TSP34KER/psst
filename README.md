@@ -22,7 +22,7 @@
 
 The project follows a deliberately simple model inspired by suckless software:
 
-- Prompt layout is ordinary C++ in `src/commands/init.cpp`.
+- Prompt layout is ordinary C++ in `config.hpp`.
 - Each prompt component is a small `IWidget` implementation.
 - Shell adapters turn the rendered widgets into Bash, Zsh, or Fish prompt output.
 - There is no configuration language, daemon, plugin manager, or runtime dependency.
@@ -70,6 +70,13 @@ Measured locally with 1,000 warmup runs from the repository root:
 | Starship | Default | 32.4 ms ± 4.5 ms | 26.8 ms .. 51.1 ms | 19.1x slower |
 
 The matched Starship configuration is in `bench/fixtures/starship-minimal.toml`.
+
+psst is also light on memory. Peak RSS is measured per process with the kernel's `VmHWM` counter, so it reflects the actual peak of the prompt binary rather than anything inherited from the shell. Measured locally from the repository root with 300 runs each:
+
+| Prompt | Peak RSS | Relative memory |
+| --- | ---: | ---: |
+| psst | 2.1 MiB | 1x |
+| Starship | 9.2 MiB | 4.5x more |
 
 psst stays fast because it is a small native executable with a fixed C++ widget list. It does not launch a collection of shell helpers or parse a large runtime configuration for every redraw. Actual results depend on hardware, filesystem state, repository size, and enabled widgets, so this is a baseline rather than a universal guarantee.
 
@@ -131,7 +138,7 @@ The command must be able to identify the current shell through `$SHELL`. Run `pr
 
 This is the central psst workflow.
 
-1. Open `src/commands/init.cpp`.
+1. Open `config.hpp`.
 2. Edit `default_config()`.
 3. Put widgets and separators in the order you want them rendered.
 4. Rebuild with `make`.
