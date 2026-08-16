@@ -1,0 +1,22 @@
+#include "widgets/Project.hpp"
+#include "widgets/general.hpp"
+#include <sys/stat.h>
+
+static bool exists(const char *path) {
+    struct stat st;
+    return stat(path, &st) == 0;
+}
+
+std::string Project::render() {
+    std::string result;
+
+    if (exists("Cargo.toml"))
+        result = "rust";
+    else if (exists("CMakeLists.txt"))
+        result = "cmake";
+    else if (exists("Makefile") || exists("makefile"))
+        result = "make";
+
+    config::print = !result.empty();
+    return result;
+}
