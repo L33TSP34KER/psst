@@ -1,5 +1,6 @@
 #include "widgets/Hostname.hpp"
 #include "widgets/ExitStatus.hpp"
+#include "widgets/Mem.hpp"
 #include "widgets/NodeVersion.hpp"
 #include "widgets/PythonVenv.hpp"
 #include "widgets/SSHSession.hpp"
@@ -37,4 +38,14 @@ int main() {
     assert(node.render().empty());
     setenv("NODE_VERSION", "v22.0.0", 1);
     assert(node.render() == "node v22.0.0");
+
+    Mem mem;
+    const std::string used = mem.render();
+    if (!used.empty()) {
+        assert(used.back() == '%');
+        const int percent = std::stoi(used);
+        assert(percent >= 0 && percent <= 100);
+    } else {
+        assert(config::print == 0);
+    }
 }

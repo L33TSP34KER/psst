@@ -17,6 +17,7 @@ ${CXX:-g++} -std=c++20 -Wall -Wextra -Werror -pedantic \
     "$ROOT/src/widgets/SSHSession.cpp" \
     "$ROOT/src/widgets/ExitStatus.cpp" \
     "$ROOT/src/widgets/NodeVersion.cpp" \
+    "$ROOT/src/widgets/Mem.cpp" \
     -o "$test_bin"
 "$test_bin"
 
