@@ -5,6 +5,7 @@
 #include "widgets/NodeVersion.hpp"
 #include "widgets/PythonVenv.hpp"
 #include "widgets/SSHSession.hpp"
+#include "widgets/Tmux.hpp"
 #include "widgets/general.hpp"
 #include <cassert>
 #include <cstdlib>
@@ -64,4 +65,10 @@ int main() {
         assert(container.render() == "systemd-nspawn");
         unsetenv("container");
     }
+
+    Tmux tmux;
+    unsetenv("TMUX");
+    assert(tmux.render().empty());
+    setenv("TMUX", "/tmp/tmux-1000/default,12345,0", 1);
+    assert(tmux.render() == "tmux");
 }
