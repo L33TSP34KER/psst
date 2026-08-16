@@ -200,6 +200,7 @@ std::make_unique<SSHSession>(),
 | `Hostname` | Current host name from `HOSTNAME` |
 | `SSHSession` | Prints `ssh` when `SSH_CONNECTION` is set |
 | `Mem` | Used memory percentage from `/proc/meminfo` |
+| `Container` | Container environment indicator (`docker`, `podman`) |
 | `Git` | Current commit hash, limited by `Git(max_chars)` |
 | `GitBranch` | Current branch |
 | `Battery` | Battery percentage/status |

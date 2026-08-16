@@ -25,6 +25,7 @@ SRC = ./src/main.cpp \
 	./src/widgets/ExitStatus.cpp \
 	./src/widgets/NodeVersion.cpp \
 	./src/widgets/Mem.cpp \
+	./src/widgets/Container.cpp \
 	./src/widgets/Charging.cpp \
 	./src/widgets/Git.cpp \
 	./src/widgets/Bat.cpp \

@@ -1,4 +1,5 @@
 #include "widgets/Hostname.hpp"
+#include "widgets/Container.hpp"
 #include "widgets/ExitStatus.hpp"
 #include "widgets/Mem.hpp"
 #include "widgets/NodeVersion.hpp"
@@ -7,6 +8,7 @@
 #include "widgets/general.hpp"
 #include <cassert>
 #include <cstdlib>
+#include <sys/stat.h>
 
 int main() {
     PythonVenv venv;
@@ -47,5 +49,19 @@ int main() {
         assert(percent >= 0 && percent <= 100);
     } else {
         assert(config::print == 0);
+    }
+
+    Container container;
+    unsetenv("container");
+    struct stat st;
+    if (stat("/run/.containerenv", &st) == 0)
+        assert(container.render() == "podman");
+    else if (stat("/.dockerenv", &st) == 0)
+        assert(container.render() == "docker");
+    else {
+        assert(container.render().empty());
+        setenv("container", "systemd-nspawn", 1);
+        assert(container.render() == "systemd-nspawn");
+        unsetenv("container");
     }
 }
