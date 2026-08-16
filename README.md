@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="imgs/icon.svg" alt="psst icon" width="120">
   <h1>psst</h1>
   <p>A tiny, fast, cross-shell prompt written in C++.</p>
   <p>
@@ -15,8 +16,6 @@
 </div>
 
 <br>
-
-![psst hero](imgs/hero.png)
 
 **psst** is a small, cross-shell prompt generator written in C++.
 
