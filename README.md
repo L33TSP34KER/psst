@@ -196,6 +196,7 @@ std::make_unique<SSHSession>(),
 | `ShortPath` | Shortened working directory |
 | `PythonVenv` | Active Python virtual environment name, when `VIRTUAL_ENV` is set |
 | `NodeVersion` | Active Node.js version from `NODE_VERSION` |
+| `Cargo` | `rust` when `Cargo.toml` exists |
 | `ExitStatus` | Previous command status, when non-zero |
 | `Hostname` | Current host name from `HOSTNAME` |
 | `SSHSession` | Prints `ssh` when `SSH_CONNECTION` is set |

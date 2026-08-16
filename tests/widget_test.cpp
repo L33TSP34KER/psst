@@ -5,6 +5,7 @@
 #include "widgets/NodeVersion.hpp"
 #include "widgets/PythonVenv.hpp"
 #include "widgets/SSHSession.hpp"
+#include "widgets/Cargo.hpp"
 #include "widgets/Tmux.hpp"
 #include "widgets/general.hpp"
 #include <cassert>
@@ -12,6 +13,30 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <unistd.h>
+
+static std::string make_temp_dir() {
+    char tmpdir[] = "/tmp/psst_widget_test_XXXXXX";
+    assert(mkdtemp(tmpdir) != nullptr);
+    return tmpdir;
+}
+
+static void check_file_widget(auto& widget, const char* filename, const char* expected) {
+    char cwd[4096];
+    assert(getcwd(cwd, sizeof(cwd)) != nullptr);
+    const std::string tmpdir = make_temp_dir();
+    assert(chdir(tmpdir.c_str()) == 0);
+
+    assert(widget.render().empty());
+    assert(config::print == 0);
+    assert(close(open(filename, O_CREAT | O_WRONLY, 0644)) == 0);
+    assert(widget.render() == expected);
+    assert(unlink(filename) == 0);
+    assert(widget.render().empty());
+    assert(config::print == 0);
+
+    assert(chdir(cwd) == 0);
+    assert(rmdir(tmpdir.c_str()) == 0);
+}
 
 int main() {
     PythonVenv venv;
@@ -73,5 +98,11 @@ int main() {
     assert(tmux.render().empty());
     setenv("TMUX", "/tmp/tmux-1000/default,12345,0", 1);
     assert(tmux.render() == "tmux");
+
+    Cargo cargo;
+    check_file_widget(cargo, "Cargo.toml", "rust");
+
+    Cargo custom_cargo("rs");
+    check_file_widget(custom_cargo, "Cargo.toml", "rs");
 
 }
