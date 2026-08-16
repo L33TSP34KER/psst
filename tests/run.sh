@@ -20,7 +20,6 @@ ${CXX:-g++} -std=c++20 -Wall -Wextra -Werror -pedantic \
     "$ROOT/src/widgets/Mem.cpp" \
     "$ROOT/src/widgets/Container.cpp" \
     "$ROOT/src/widgets/Tmux.cpp" \
-    "$ROOT/src/widgets/Project.cpp" \
     -o "$test_bin"
 "$test_bin"
 

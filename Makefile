@@ -27,7 +27,6 @@ SRC = ./src/main.cpp \
 	./src/widgets/Mem.cpp \
 	./src/widgets/Container.cpp \
 	./src/widgets/Tmux.cpp \
-	./src/widgets/Project.cpp \
 	./src/widgets/Charging.cpp \
 	./src/widgets/Git.cpp \
 	./src/widgets/Bat.cpp \
@@ -47,7 +46,7 @@ OBJ = $(SRC:.c=.o)
 OBJ := $(OBJ:.cpp=.o)
 
 CFLAGS   = -O3 -Wall -Wextra -Werror -pedantic -march=native -I./src
-CXXFLAGS = -O3 -Wall -Wextra -Werror -pedantic -march=native -std=c++20 -I./src
+CXXFLAGS = -O3 -Wall -Wextra -Werror -pedantic -march=native -std=c++20 -I./src -I./
 LDFLAGS  = -static
 NAME = prompter
 PREFIX ?= $(HOME)/.local
