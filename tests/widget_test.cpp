@@ -5,7 +5,9 @@
 #include "widgets/NodeVersion.hpp"
 #include "widgets/PythonVenv.hpp"
 #include "widgets/SSHSession.hpp"
+#include "widgets/CMake.hpp"
 #include "widgets/Cargo.hpp"
+#include "widgets/Makefile.hpp"
 #include "widgets/Tmux.hpp"
 #include "widgets/general.hpp"
 #include <cassert>
@@ -105,4 +107,9 @@ int main() {
     Cargo custom_cargo("rs");
     check_file_widget(custom_cargo, "Cargo.toml", "rs");
 
+    CMake cmake;
+    check_file_widget(cmake, "CMakeLists.txt", "cmake");
+
+    Makefile makefile;
+    check_file_widget(makefile, "Makefile", "make");
 }

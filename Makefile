@@ -28,6 +28,8 @@ SRC = ./src/main.cpp \
 	./src/widgets/Container.cpp \
 	./src/widgets/Tmux.cpp \
 	./src/widgets/Cargo.cpp \
+	./src/widgets/CMake.cpp \
+	./src/widgets/Makefile.cpp \
 	./src/widgets/Charging.cpp \
 	./src/widgets/Git.cpp \
 	./src/widgets/Bat.cpp \
