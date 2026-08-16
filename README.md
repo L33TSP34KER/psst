@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="imgs/icon.svg" alt="psst icon" width="120">
-  <h1>psst</h1>
+  <img src="imgs/icon.svg" alt="psst icon">
+  <br>
   <p>A tiny, fast, cross-shell prompt written in C++.</p>
   <p>
     <a href="https://github.com/L33TSP34KER/psst/actions/workflows/c-cpp.yml"><img src="https://github.com/L33TSP34KER/psst/actions/workflows/c-cpp.yml/badge.svg" alt="CI"></a>
