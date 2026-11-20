@@ -1,35 +1,17 @@
 #include <algorithm>
 #include "commands/commands.hpp"
 #include "parser.hpp"
-#include "widgets/Battery.hpp"
-#include "widgets/Git.hpp"
-#include "widgets/GitBranch.hpp"
-#include "widgets/Hours.hpp"
-#include "widgets/IWidget.hpp"
-#include "widgets/ExitStatus.hpp"
-#include "widgets/general.hpp"
-#include "widgets/Minute.hpp"
-#include "widgets/Path.hpp"
-#include "widgets/PythonVenv.hpp"
-#include "widgets/RootSymol.hpp"
-#include "widgets/Separator.hpp"
-#include "widgets/ShortPath.hpp"
-#include "widgets/User.hpp"
-#include "widgets/colors/Cyan.hpp"
-#include "widgets/colors/Bold.hpp"
-#include "widgets/colors/Red.hpp"
-#include "widgets/colors/Purple.hpp"
-#include "widgets/colors/Reset.hpp"
-#include "shells/Bash.hpp"
-#include "shells/Fish.hpp"
-#include "shells/EShell.hpp"
-#include "shells/IShell.hpp"
 #include <cstdlib>
 #include <iostream>
 #include <vector>
 #include <memory>
-#include <functional>
 #include <sstream>
+#include "shells/Bash.hpp"
+#include "shells/Fish.hpp"
+#include "shells/EShell.hpp"
+#include "shells/IShell.hpp"
+#include "widgets/general.hpp"
+#include "config.hpp"
 
 std::string get_shell(std::string s) {
 	std::vector<std::string> splited_string;
@@ -40,41 +22,6 @@ std::string get_shell(std::string s) {
 	}
 	return splited_string[splited_string.size() - 1];
 }
-
-std::vector<std::shared_ptr<IWidget>> default_config() {
-    return {
-        std::make_unique<Purple>(),
-        std::make_unique<Separator>("\n "),
-        std::make_unique<Reset>(),
-        std::make_unique<Cyan>(),
-        std::make_unique<User>(),
-        std::make_unique<Reset>(),
-
-        std::make_unique<Separator>(" "),
-        std::make_unique<Path>(),
-        
-        std::make_unique<Separator>(" "),
-        std::make_unique<Red>(),
-        std::make_unique<Git>(5),
-        std::make_unique<Separator>(" "),
-        std::make_unique<GitBranch>(),
-        std::make_unique<Reset>(),
-
-        std::make_unique<Separator>(" "),
-        std::make_unique<Battery>(),
-        std::make_unique<Purple>(),
-        std::make_unique<Separator>(" "),
-        std::make_unique<Separator>("\n", 0),
-        std::make_unique<Reset>(),
-        
-        std::make_unique<Purple>(),
-        std::make_unique<Bold>(),
-        std::make_unique<Separator>(" ", 0),
-        std::make_unique<Reset>(),
-        std::make_unique<Separator>(" ")
-    };
-}
-
 std::string trim(const std::string& str) {
     auto start = str.begin();
     while (start != str.end() && std::isspace(*start)) {
@@ -92,8 +39,6 @@ std::string trim(const std::string& str) {
 int commands::init(int status) {
 	if (!std::getenv("SHELL")) return 1;
 	config::status = status;
-	Red red;
-	Reset reset;
 	std::string shell_str = get_shell(std::getenv("SHELL"));
 	std::unique_ptr<IShell> shell = std::make_unique<Shell::Bash>();
 

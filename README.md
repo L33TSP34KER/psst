@@ -160,33 +160,6 @@ std::vector<std::shared_ptr<IWidget>> default_config() {
 }
 ```
 
-The order matters. Every widget is rendered from left to right and concatenated into one prompt.
-
-### Minimal configuration
-
-For a quieter prompt, replace `default_config()` with a small set of widgets:
-
-```cpp
-std::vector<std::shared_ptr<IWidget>> default_config() {
-    return {
-        std::make_unique<User>(),
-        std::make_unique<Separator>(" "),
-        std::make_unique<Path>(),
-        std::make_unique<Separator>("\n> ")
-    };
-}
-```
-
-`PythonVenv`, `NodeVersion`, `ExitStatus`, `Hostname`, and `SSHSession` are available but are not enabled in the default prompt. Add them explicitly when you want them:
-
-```cpp
-std::make_unique<PythonVenv>(),
-std::make_unique<Separator>(" "),
-std::make_unique<NodeVersion>(),
-std::make_unique<Separator>(" "),
-std::make_unique<SSHSession>(),
-```
-
 ### Built-in widgets
 
 | Widget | Output |
@@ -196,7 +169,9 @@ std::make_unique<SSHSession>(),
 | `ShortPath` | Shortened working directory |
 | `PythonVenv` | Active Python virtual environment name, when `VIRTUAL_ENV` is set |
 | `NodeVersion` | Active Node.js version from `NODE_VERSION` |
-| `Cargo` | `rust` when `Cargo.toml` exists |
+| `Cargo` | Prints `rust` when `Cargo.toml` exists |
+| `CMake` | Prints `cmake` when `CMakeLists.txt` exists |
+| `Makefile` | Prints `make` when `Makefile` or `makefile` exists |
 | `ExitStatus` | Previous command status, when non-zero |
 | `Hostname` | Current host name from `HOSTNAME` |
 | `SSHSession` | Prints `ssh` when `SSH_CONNECTION` is set |
@@ -212,7 +187,7 @@ std::make_unique<SSHSession>(),
 | `Minute` | Current minute |
 | `Seconds` | Current seconds |
 | `RootSymbol` | Root-user marker |
-| `Separator("...")` | Literal text, whitespace, or a line break |
+| `Separator` | Literal text, whitespace, or a line break |
 
 Color and style widgets are state changes in the output, not visible text:
 
